@@ -1,2 +1,2 @@
 # stepanoffweb.github.io
-Сборная солянка из учебных проектов верстки. Безусловно требует систематизации путем создания веток в основном репозитории...
+It's just a handfull of learning projects in the JavaScript course I had.
