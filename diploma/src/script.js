@@ -500,3 +500,5 @@
 	    });
 	}
 	sendMessage();
+
+new WOW().init();
