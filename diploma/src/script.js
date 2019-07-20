@@ -1,5 +1,5 @@
 // TIMER
-let deadline = '2019-07-24',
+let deadline = '2019-12-29',
 	// calculates time to the end and return the object with separated values of time units
     getTimeRemain = (endtime) => {
         let now = Date.now(),
@@ -17,7 +17,7 @@ let deadline = '2019-07-24',
             'seconds': seconds
         };
     },
-    //
+    // output results on the page
     print = (unit, field1, field2, field3) => {
         unit = ''+unit;
         if(unit.length < 2 && field3) {
@@ -34,10 +34,9 @@ let deadline = '2019-07-24',
         } else {
         	field1.textContent = unit[0];
             field2.textContent = unit[1];
-            // field3.textContent = unit[2];
         }
     },
-
+    // the main function
     setClock = (endtime) => {
         let timer = document.querySelectorAll('.unit'),
             days1 = timer[0],
