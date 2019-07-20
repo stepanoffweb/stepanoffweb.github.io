@@ -36,7 +36,7 @@ let deadline = '2019-12-29',
             field2.textContent = unit[1];
         }
     },
-    // the main function
+    // main function
     setClock = (endtime) => {
         let timer = document.querySelectorAll('.unit'),
             days1 = timer[0],
@@ -47,8 +47,7 @@ let deadline = '2019-12-29',
             minutes1 = timer[5],
             minutes2 = timer[6],
             seconds1 = timer[7],
-            seconds2 = timer[8],
-            timeInterval = setInterval(updateClock, 1000);
+            seconds2 = timer[8];
 
         function updateClock() {
             let t = getTimeRemain(endtime);
@@ -65,6 +64,7 @@ let deadline = '2019-12-29',
                 print(t.seconds, seconds1, seconds2);
             }
         }
+        setInterval(updateClock, 1000);
     };
 
 setClock(deadline);
