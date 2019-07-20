@@ -1,5 +1,5 @@
 	// TIMER
-	let deadline = '2019-07-04',
+	let deadline = '2019-07-24',
 	    getTimeRemain = (endtime) => {
 	        let now = new Date(),
 	            d = Date.parse(endtime) - Date.parse(now),
@@ -18,7 +18,7 @@
 	    },
 
 	    print = (unit, field1, field2, field3 = 0) => {
-	        unit = '' + unit;
+	        unit = ''+unit;
 	        if (unit.length < 2) {
 	            field1.textContent = '0';
 	            field2.textContent = unit;
@@ -47,7 +47,7 @@
 
 	            if (t.total <= 0) {
 	                clearInterval(timeInterval);
-	                timer.forEach(e, function () {
+	                timer.forEach(function (e) {
 	                    e.textContent = '0';
 	                });
 	            } else {

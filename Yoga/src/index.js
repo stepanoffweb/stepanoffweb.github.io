@@ -17,4 +17,4 @@ window.addEventListener('DOMContentLoaded', function () {
     modal();
 });
 
-// import tabs from './modules/tabs'; -ES6 (НЕ ОБЕРТЫВАТЬ ОБРАБОТЧИКОМ !!!)
+// import tabs from './modules/tabs'; -ES6 (вынести из обработчика в начало)
