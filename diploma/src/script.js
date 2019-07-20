@@ -1,8 +1,8 @@
 	// TIMER
 	let deadline = '2019-07-24',
 	    getTimeRemain = (endtime) => {
-	        let now = new Date(),
-	            d = Date.parse(endtime) - Date.parse(now),
+	        let now = Date.now(),
+	            d = Date.parse(endtime) - now,
 	            seconds = Math.floor((d / 1000) % 60),
 	            minutes = Math.floor((d / 1000 / 60) % 60),
 	            hours = Math.floor(d / (1000 * 60 * 60) % 24) + now.getTimezoneOffset() / 60;
