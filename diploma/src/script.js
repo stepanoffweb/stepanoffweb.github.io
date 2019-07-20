@@ -5,7 +5,7 @@
 	            d = Date.parse(endtime) - now,
 	            seconds = Math.floor((d / 1000) % 60),
 	            minutes = Math.floor((d / 1000 / 60) % 60),
-	            hours = Math.floor(d / (1000 * 60 * 60) % 24) + now.getTimezoneOffset() / 60;
+	            hours = Math.floor(d / (1000 * 60 * 60) % 24) + (new Date().getTimezoneOffset() / 60);
 	        days = Math.floor(d / (1000 * 60 * 60 * 24));
 
 	        return {
