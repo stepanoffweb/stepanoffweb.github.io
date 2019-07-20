@@ -20,10 +20,7 @@ let deadline = '2019-07-24',
     //
     print = (unit, field1, field2, field3) => {
         unit = ''+unit;
-        if (unit.length < 2) {
-            field1.textContent = '0';
-            field2.textContent = unit;
-        } else if(unit.length < 2 && field3) {
+        if(unit.length < 2 && field3) {
             field1.textContent = '0';
             field2.textContent = '0';
             field3.textContent = unit;
@@ -31,10 +28,13 @@ let deadline = '2019-07-24',
         	field1.textContent = '0';
             field2.textContent = unit[0];
             field3.textContent = unit[1];
+        } else if (unit.length < 2) {
+            field1.textContent = '0';
+            field2.textContent = unit;
         } else {
         	field1.textContent = unit[0];
             field2.textContent = unit[1];
-            field3.textContent = unit[2];
+            // field3.textContent = unit[2];
         }
     },
 
