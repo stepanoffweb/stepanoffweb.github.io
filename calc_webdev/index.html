@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Frontend Developer Calc</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calc">
+        <nav class="tabs">
+            <div class="tab-left active">Лэндинг</div>
+            <div class="tab-right">Многостраничник</div>
+        </nav>
+        <div class="blocks" id="blocks-block">
+            <div class="blocks-title">Количество блоков</div>
+            <input type="number" class="counter" id="counter-block">
+        </div>
+        <div class="blocks" id="pages-block">
+            <div class="blocks-title">Количество страниц</div>
+            <input type="number" class="counter" id="counter-pages">
+        </div>
+        <div class="blocks" >
+            <div class="blocks-title">Сколько часов на проект</div>
+            <input type="number" class="counter" id="counter-hours">
+        </div>
+        <div class="blocks" >
+            <div class="blocks-title">Стоимость вашего часа</div>
+            <input type="number" class="counter" id="counter-rate">
+        </div>
+        <div class="addition">
+            <div class="addition-title">Дополнительно</div>
+            <label class="addition-block">
+                <input type="checkbox" class="checkbox" id="changes-check">Возможность редактировать текст на сайте</input>
+            </label>
+            <label class="addition-block">
+                <input type="checkbox" class="checkbox" id="cms-check">Установка на CMS
+            </label>
+        </div>
+        <div class="total">
+            <p>Общая стоимость</p>
+            <input value="1500" type="text" class="total-count" id="total-value">
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
