@@ -16,14 +16,11 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
 # =========================
 # Operating System Files
 # =========================
-
 # OSX
 # =========================
-
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -42,9 +39,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
 # dependencies
-/**/node_modules
+**/node_modules
+
 /.pnp
 .pnp.js
 
@@ -53,6 +50,10 @@ Temporary Items
 
 # production
 /build
+/dist/
+/jedi/app/js/scripts.min.js
+/jedi/app/css/*
+
 
 # misc
 .env.local
@@ -63,7 +64,11 @@ Temporary Items
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-*.psd
+**/dist/*
+**/references-dj7
+**/*.psd
 **/*.txt
-#gulpfile.js
+**/*.pdf
+
+/**/_backstage
+/**/package-lock.json
