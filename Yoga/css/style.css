@@ -822,12 +822,14 @@ header ul li:before {
 }
 
 @media only screen and (max-width: 992px) {
-  .main {
-    height: 450px;
-  }
-  .main-block {
-    margin-top: 80px;
-  }
+    .main {
+        height: 450px;
+    }
+
+    .main-block {
+        margin-top: 80px;
+    }
+
     .main-block-title {
         font-size: 32px;
     }
@@ -835,20 +837,25 @@ header ul li:before {
     .main-block-title {
         font-size: 28px;
     }
+
     .main-block-descr {
-      font-size: 18px;
+        font-size: 18px;
     }
+
     .content {
-      min-height: 2700px;
+        min-height: 2700px;
     }
+
     .content .info-header-tab {
-      font-size: 18px;
+        font-size: 18px;
     }
+
     .content .info-tabcontent {
-      padding-top: 10px;
+        padding-top: 10px;
     }
+
     .content .info-tabcontent .description-title {
-      font-size: 28px;
+        font-size: 28px;
     }
 
     .content .info-tabcontent .photo {
@@ -858,22 +865,29 @@ header ul li:before {
     .content .info-tabcontent .description {
         width: 100%;
     }
+
     .content .info-tabcontent .description-text {
-      font-size: 14px;
+        font-size: 14px;
     }
 
     .content .timer-title {
         font-size: 28px;
     }
+
     .content .timer-numbers {
-  font-size: 70px;
+        font-size: 70px;
     }
-    .content .slider, .content .timer, .content .contact, .content .counter {
-      margin-top: 50px;
+
+    .content .slider,
+    .content .timer,
+    .content .contact,
+    .content .counter {
+        margin-top: 50px;
     }
+
     .content .slider-title {
-      font-size: 28px;
-      margin-left: 50px;
+        font-size: 28px;
+        margin-left: 50px;
     }
 
     .content .contact-img img {
@@ -883,6 +897,7 @@ header ul li:before {
     .content .counter-title {
         font-size: 28px;
     }
+
     .content .counter-block-option {
         font-size: 18px;
     }
@@ -890,13 +905,14 @@ header ul li:before {
     .content .counter-block-option.base {
         margin-right: 35px;
     }
+
     .content .counter-total {
         font-size: 28px;
     }
-    .content .counter-total span {
-      font-size: 32px;
-    }
 
+    .content .counter-total span {
+        font-size: 32px;
+    }
 
     .content .contact-form {
         width: 100%;
@@ -905,19 +921,21 @@ header ul li:before {
     .contact-img {
         display: none;
     }
-    .content footer {
-      height: 150px;
-    }
 
+    .content footer {
+        height: 150px;
+    }
 
     .content .counter-total {
         text-align: left;
     }
+
     .content footer .social .social-block {
-      width: 50px;
-      height: 50px;
+        width: 50px;
+        height: 50px;
     }
+
     .content footer .social .social-block a img {
-      margin-top: 12px;
+        margin-top: 12px;
     }
 }
