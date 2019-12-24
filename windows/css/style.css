@@ -307,6 +307,7 @@ textarea:focus {
 }
 .glazing_block {
   display: inline-block;
+  outline: none;
 }
 .glazing_block img {
   display: block;
@@ -314,6 +315,7 @@ textarea:focus {
   margin-bottom: 2rem;
 }
 .glazing_block a {
+  border: none;
   font-size: 1.8rem;
   font-weight: 600;
   text-decoration: underline;
@@ -408,22 +410,11 @@ textarea:focus {
 .glazing .rise {
   display: none;
 }
-.glazing a.active {
-  text-decoration: none;
-  color: #454545;
-}
-/*test*/
-/*.tabs li {
-  display: inline-block;
-}
-.tabs .glazing_block.active  a {
+.glazing_block.slick-current a {
       text-decoration: none;
       color: #454545;
 }
-.tabs_divs .noactive {
-  display: none;
-}*/
-/*/test*/
+
 /*Decoration*/
 .decoration {
   padding: 8rem 0;
@@ -431,6 +422,7 @@ textarea:focus {
 }
 .decoration_item {
   text-align: center;
+  outline: none;
 }
 .decoration_item a {
   font-size: 2rem;
@@ -461,7 +453,7 @@ textarea:focus {
   padding: 2rem 0;
   border-top: 1rem solid #f7f7f7;
 }
-.decoration_item .after_click {
+.decoration_item.slick-current .no_click  {
   border-top: 1rem solid #0089cd;
   height: 8rem;
   padding: 2rem 0;

@@ -1,5 +1,5 @@
 // TIMER
-let deadline = '2019-12-29',
+let deadline = '2020-12-29',
 	// calculates time to the end and return the object with separated values of time units
     getTimeRemain = (endtime) => {
         let now = Date.now(),
@@ -145,84 +145,6 @@ imgs.addEventListener('click', function (event) {
     });
 });
 
-// TABS WINDOWS
-let tabsBlock = document.querySelector('.glazing_slider'),
-    tabs = document.querySelectorAll('.glazing_slider .glazing_block'),
-	tabContent = document.querySelectorAll('.glazing .row');
-
-let hideTabs = () => {
-    tabContent.forEach(function (e) {
-        e.style.display = 'none';
-    });
-    tabs.forEach(function (el) {
-		el = el.querySelector('a');
-        if (el.classList.contains('active')) {
-            el.classList.remove('active');
-        }
-    });
-};
-hideTabs();
-tabContent[0].style.display = 'block';
-tabs[0].querySelector('a').classList.add('active');
-
-let showTabContent = (b, tab) => {
-    tabContent[b].style.display = 'block';
-    tab.classList.add('active');
-};
-
-tabsBlock.addEventListener('click', function (event) {
-    event.preventDefault();
-	let target = event.target;
-	while (target != this) {
-		if (target && target.classList.contains('glazing_block')) {
-			for (let i = 0; i < tabs.length; i++) {
-				if (target == tabs[i]) {
-					hideTabs();
-					showTabContent(i, target.querySelector('a'));
-					break;
-				}
-			}
-		}
-		target = target.parentNode;
-	}
-});
-// TABS DECORATION
-let tabsBlock2 = document.querySelector('.decoration_slider'),
-    tabs2 = document.querySelectorAll('.decoration_slider a'),
-    tabContent2 = document.querySelectorAll('.decoration_content .internal, .external, .rising, .roof');
-
-let hideTabs2 = () => {
-    tabContent2.forEach(function (e) {
-        e.style.display = 'none';
-    });
-    tabs2.forEach(function (el) {
-        if (el.parentNode.classList.contains('after_click')) {
-            el.parentNode.classList.remove('after_click');
-        }
-    })
-};
-hideTabs2();
-tabContent2[1].style.display = 'block';
-tabs2[0].parentNode.classList.add('after_click');
-
-let showTabContent2 = (b, tab) => {
-    tabContent2[b].style.display = 'block';
-    tab.parentNode.classList.add('after_click');
-};
-
-tabsBlock2.addEventListener('click', function (event) {
-    event.preventDefault();
-    let target = event.target;
-    if (target && target.tagName == 'A') {
-        for (let i = 0; i < tabs2.length; i++) {
-            if (target == tabs2[i]) {
-                hideTabs2();
-                showTabContent2(i, target);
-                break;
-            }
-        }
-    }
-});
 // CALCULATOR
 // 1-е ОКНО (popup_calc)
 let calcBtnsBlock = document.querySelector('section.glazing'),
