@@ -310,6 +310,9 @@ Credit Card
   text-transform: capitalize;
   font-family: 'Halter';
 }
+.credit-card-box .card-holder > div {
+  padding-top: 20px;
+}
 .credit-card-box .card-expiration-date {
   text-align: left;
   left: auto;

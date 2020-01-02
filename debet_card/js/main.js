@@ -1,4 +1,4 @@
-/* Заполнение банковской карты на сайте */
+// Since 2014, VISA and MasterCard are shortens maximum length for Cardholder names to 21 characters and 22 characters respectively.
 $(function() {
 	$('.input-cart-number').numeric();
 	$('#card-ccv').numeric();
@@ -13,7 +13,9 @@ $(function() {
 		}
 	});
 	$('#card-holder').on('keyup change', function() {
-		$('.card-holder div').text($(this).val());
+		if ($('#card-holder').val().length <21) {
+			$('.card-holder div').text($(this).val());
+		}
 	});
 	$('#card-expiration-month').change(function() {
 		$('.month').text($(this).val()+'/');
