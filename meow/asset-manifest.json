@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2def2e2d.chunk.css",
+    "main.js": "/static/js/main.9083de9d.chunk.js",
+    "main.js.map": "/static/js/main.9083de9d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c6df02e2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c6df02e2.js.map",
+    "static/js/2.ad04c07d.chunk.js": "/static/js/2.ad04c07d.chunk.js",
+    "static/js/2.ad04c07d.chunk.js.map": "/static/js/2.ad04c07d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e18c8d592dfe1b9f943255e1d60ed80b.js": "/precache-manifest.e18c8d592dfe1b9f943255e1d60ed80b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.2def2e2d.chunk.css.map": "/static/css/main.2def2e2d.chunk.css.map",
+    "static/js/2.ad04c07d.chunk.js.LICENSE.txt": "/static/js/2.ad04c07d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/bg.cf34c858.png",
+    "static/media/App.css": "/static/media/exo2.0-thin-webfont.a0e80885.woff2",
+    "static/media/kote.png": "/static/media/kote.1cc3a5db.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6df02e2.js",
+    "static/js/2.ad04c07d.chunk.js",
+    "static/css/main.2def2e2d.chunk.css",
+    "static/js/main.9083de9d.chunk.js"
+  ]
+}
