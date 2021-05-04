@@ -1,5 +1,5 @@
 // TIMER
-let deadline = '2020-12-29',
+let deadline = '2021-12-29',
 	// calculates time to the end and return the object with separated values of time units
     getTimeRemain = (endtime) => {
         let now = Date.now(),
