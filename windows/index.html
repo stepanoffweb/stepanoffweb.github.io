@@ -8,14 +8,13 @@
     <title>Ирвас окна</title>
 
     <!-- Yandex.Metrika counter --> <script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter51159164 = new Ya.Metrika2({ id:51159164, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/51159164" style="position:absolute; left:-9999px;" alt="Yandex.Metrika" ></div></noscript> <!-- /Yandex.Metrika counter -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <!-- Slick Slider -->
+    <!-- libs -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick-theme.css"> <!-- присутствует трудноуловимый конфликт с главными стилями, для сохранения работоспособности не опускать строку ниже подключения style.css -->
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <!-- Animate -->
     <link rel="stylesheet" href="css/animate.min.css">
   </head>
 
@@ -70,31 +69,32 @@
           <div class="col-lg-6 col-md-7 wow fadeInLeft">
             <h1><span>Остекление балконов "под ключ"<br></span>за 12 800 рублей!</h1>
             <div class="main_features">
+              <!-- Features -->
              <div class="row">
                <div class="col-sm-3 col-xs-6">
                  <div class="main_features_block">
-                   <img src="img/main/icons/quality.png" alt="">
+                   <img src="img/main/icons/quality.png" alt="Качество">
                    <p>Высокое <br>качество</p>
                  </div>
                </div>
 
                <div class="col-sm-3 col-xs-6">
                  <div class="main_features_block">
-                   <img src="img/main/icons/time.png" alt="">
+                   <img src="img/main/icons/time.png" alt="Скорость">
                    <p>Быстрый <br>монтаж</p>
                  </div>
                </div>
 
               <div class="col-sm-3 col-xs-6">
                 <div class="main_features_block">
-                  <img class="small_img" src="img/main/icons/guaranty.png" alt="">
+                  <img class="small_img" src="img/main/icons/guaranty.png" alt="Гарантия">
                   <p>Гарантия <br>3 года</p>
                 </div>
               </div>
 
                <div class="col-sm-3 col-xs-6">
                  <div class="main_features_block">
-                   <img class="small_img" src="img/main/icons/delivery.png" alt="">
+                   <img class="small_img" src="img/main/icons/delivery.png" alt="вывоз мусора">
                    <p>Вывоз <br>мусора</p>
                  </div>
                </div>
@@ -103,6 +103,7 @@
           </div>
 
           <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 wow fadeInRight">
+            <!-- Form -->
             <form class="form main_form" action="#">
               <h2>Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
               <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
@@ -349,7 +350,7 @@
             <div class="internal">
               <div class="col-lg-3 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 no-padding">
                 <div class="decoration_img">
-                  <img src="img/decoration/decoration_img.png" alt="">
+                  <img src="img/decoration/decoration_img.png" alt="Внутренняя отделка">
                 </div>
               </div>
               <!-- Material -->
@@ -357,35 +358,35 @@
                <div class="row">
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/material/lining.png" alt="#">
+                     <img src="img/decoration/material/lining.png" alt="Вагонка">
                      <h3>Вагонка</h3>
                      <p>600 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/material/plastic.png" alt="#">
+                     <img src="img/decoration/material/plastic.png" alt="Пластик">
                      <h3>Пластиковая вагонка</h3>
                      <p>750 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/material/pvh.png" alt="#">
+                     <img src="img/decoration/material/pvh.png" alt="ПВХ панели">
                      <h3>ПВХ-панели</h3>
                      <p>800 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/material/laminate.png" alt="#">
+                     <img src="img/decoration/material/laminate.png" alt="Ламинат">
                      <h3>Настил пола <br>из ламината</h3>
                      <p>1250 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/material/tree.png" alt="#">
+                     <img src="img/decoration/material/tree.png" alt="Деревянный настил">
                      <h3>Настил пола <br>из дерева</h3>
                      <p>1650 руб. кв.м.<span>с материалом</span></p>
                    </div>
@@ -407,7 +408,7 @@
             <div class="external">
               <div class="col-lg-3 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 no-padding">
                 <div class="decoration_img">
-                  <img src="img/decoration/2/decoration2_img.png" alt="" style="margin-top: 3rem;">
+                  <img src="img/decoration/2/decoration2_img.png" alt="Внешняя отделка" style="margin-top: 3rem;">
                 </div>
               </div>
               <!-- Material -->
@@ -415,35 +416,35 @@
                <div class="row">
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/2/metal.png" alt="#">
+                     <img src="img/decoration/2/metal.png" alt="Металлический сайдинг">
                      <h3>Металлический <br>сайдинг</h3>
                      <p>600 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/2/plastic.png" alt="#">
+                     <img src="img/decoration/2/plastic.png" alt="Пластиковая вагока">
                      <h3>Пластиковая <br>вагонка</h3>
                      <p>750 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/2/profnastil.png" alt="#">
+                     <img src="img/decoration/2/profnastil.png" alt="Профнастил">
                      <h3>Профнастил</h3>
                      <p>800 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/2/tree.png" alt="#">
+                     <img src="img/decoration/2/tree.png" alt="Деревянная вагонка">
                      <h3>Деревянная <br>вагонка</h3>
                      <p>1250 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/2/vinil.png" alt="#">
+                     <img src="img/decoration/2/vinil.png" alt="Виниловый сайдинг">
                      <h3>Виниловый <br>сайдинг</h3>
                      <p>1650 руб. кв.м.<span>с материалом</span></p>
                    </div>
@@ -451,6 +452,7 @@
                </div>
               </div>
               <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                <!-- Form  -->
                 <form class="form main_form decoration_form" action="#">
                   <h2>Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
                   <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
@@ -466,7 +468,7 @@
             <div class="rising">
               <div class="col-lg-3 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 no-padding">
                 <div class="decoration_img">
-                  <img src="img/decoration/3/decoration3_img.jpg" alt="" style="margin-top: 3rem;">
+                  <img src="img/decoration/3/decoration3_img.jpg" alt="Оконные рамы" style="margin-top: 3rem;">
                 </div>
               </div>
               <!-- Material -->
@@ -474,28 +476,28 @@
                <div class="row">
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/3/aluminum.png" alt="#">
+                     <img src="img/decoration/3/aluminum.png" alt="Аллюминиевый профиль">
                      <h3>Алюминиевый <br>профиль</h3>
                      <p>600 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/3/bezram.png" alt="#">
+                     <img src="img/decoration/3/bezram.png" alt="Безрамное остекление">
                      <h3>Безрамное <br>остекление</h3>
                      <p>750 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/3/pvh.png" alt="#">
+                     <img src="img/decoration/3/pvh.png" alt="ПВХ профиль">
                      <h3>ПВХ <br>профиль</h3>
                      <p>800 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/3/tree.png" alt="#">
+                     <img src="img/decoration/3/tree.png" alt="Деревянный профиль">
                      <h3>Деревянный <br>профиль</h3>
                      <p>1250 руб. кв.м.<span>с материалом</span></p>
                    </div>
@@ -518,7 +520,7 @@
             <div class="roof">
               <div class="col-lg-3 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 no-padding">
                 <div class="decoration_img">
-                  <img src="img/decoration/4/decoration4_img.png" alt="" style="margin-top: 3rem;">
+                  <img src="img/decoration/4/decoration4_img.png" alt="Крыша" style="margin-top: 3rem;">
                 </div>
               </div>
               <!-- Material -->
@@ -526,35 +528,35 @@
                <div class="row">
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/4/gofrolist.png" alt="#">
+                     <img src="img/decoration/4/gofrolist.png" alt="Гофролист">
                      <h3>Гофролист</h3>
                      <p>600 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/4/metallocherepitsa.png" alt="#">
+                     <img src="img/decoration/4/metallocherepitsa.png" alt="Металлочерепица">
                      <h3>Металлочерепица</h3>
                      <p>750 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/4/ondulin.png" alt="#">
+                     <img src="img/decoration/4/ondulin.png" alt="Ондулин">
                      <h3>Ондулин</h3>
                      <p>800 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/4/polikarbonat.png" alt="#">
+                     <img src="img/decoration/4/polikarbonat.png" alt="Поликарбонат">
                      <h3>Поликарбонат</h3>
                      <p>1250 руб. кв.м.<span>с материалом</span></p>
                    </div>
                  </div>
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                    <div class="decoration_content_material text-center">
-                     <img src="img/decoration/4/steklopaket.png" alt="#">
+                     <img src="img/decoration/4/steklopaket.png" alt="Стеклопакет">
                      <h3>Стеклопакет</h3>
                      <p>1650 руб. кв.м.<span>с материалом</span></p>
                    </div>
@@ -573,9 +575,9 @@
             </div>
             <!-- /roof -->
 
-          </div><!-- row -->
-        </div> <!-- decoration_content -->
-      </div> <!-- container -->
+          </div><!-- end row -->
+        </div> <!-- end decoration_content -->
+      </div> <!-- end container -->
     </section>
 
     <!-- Our works -->
@@ -586,14 +588,54 @@
           <div class="section_header_sub"></div>
         </div>
         <div class="row" id="our_works">
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn"><a href="img/our_works/big_img/1.png"><img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in"><img src="img/our_works/1.png" alt="work 1"></a></div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.1s"><a href="img/our_works/big_img/2.png"><img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in"><img src="img/our_works/2.png" alt="work 2"></a></div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.2s"><a href="img/our_works/big_img/3.png"><img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in"><img src="img/our_works/3.png" alt="work 3"></a></div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.3s"><a href="img/our_works/big_img/4.png"><img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in"><img src="img/our_works/4.png" alt="work 4"></a></div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.4s"><a href="img/our_works/big_img/5.png"><img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in"><img src="img/our_works/5.png" alt="work 5"></a></div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.5s"><a href="img/our_works/big_img/6.png"><img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in"><img src="img/our_works/6.png" alt="work 6"></a></div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.6s"><a href="img/our_works/big_img/7.png"><img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in"><img src="img/our_works/7.png" alt="work 7"></a></div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.7s"><a href="img/our_works/big_img/8.png"><img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in"><img src="img/our_works/8.png" alt="work 8"></a></div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn">
+            <div class="a" data-img="img/our_works/big_img/1.png" data-fancybox="gallery">
+              <img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in" >
+              <img src="img/our_works/1.png" alt="work 1" >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.1s">
+            <div class="a" data-img="img/our_works/big_img/2.png" data-fancybox="gallery">
+              <img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in">
+                <img src="img/our_works/2.png" alt="work 2" >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.2s">
+            <div class="a" data-img="img/our_works/big_img/3.png" data-fancybox="gallery">
+              <img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in">
+              <img src="img/our_works/3.png" alt="work 3" >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.3s">
+            <div class="a" data-img="img/our_works/big_img/4.png" data-fancybox="gallery">
+              <img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in">
+              <img src="img/our_works/4.png" alt="work 4" >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.4s">
+            <div class="a" data-img="img/our_works/big_img/5.png" data-fancybox="gallery">
+              <img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in">
+              <img src="img/our_works/5.png" alt="work 5" >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.5s">
+            <div class="a" data-img="img/our_works/big_img/6.png" data-fancybox="gallery">
+              <img class="lupa"src="img/our_works/zoom-in.png" alt="zoom in">
+              <img src="img/our_works/6.png" alt="work 6" >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.6s">
+            <div class="a" data-img="img/our_works/big_img/7.png" data-fancybox="gallery">
+              <img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in">
+              <img src="img/our_works/7.png" alt="work 7" >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.7s">
+            <div class="a" data-img="img/our_works/big_img/8.png" data-fancybox="gallery">
+              <img class="lupa" src="img/our_works/zoom-in.png" alt="zoom in">
+              <img src="img/our_works/8.png" alt="work 8" >
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -608,37 +650,37 @@
         <div class="row">
           <div class="col-md-4 col-sm-6 col-xs-6 text-center wow fadeInUp">
             <div class="guarantees_block">
-              <img src="img/guarantees/1.png" alt="#">
+              <img src="img/guarantees/1.png" alt="Качество">
               <h3>Высокое качество</h3>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-6 text-center wow fadeInUp" data-wow-delay="0.1s">
             <div class="guarantees_block">
-              <img src="img/guarantees/2.png" alt="">
+              <img src="img/guarantees/2.png" alt="Под ключ">
               <h3>Выполнение работ <br>под ключ</h3>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-6 text-center wow fadeInUp" data-wow-delay="0.2s">
             <div class="guarantees_block">
-              <img src="img/guarantees/3.png" alt="">
+              <img src="img/guarantees/3.png" alt="Скорость">
               <h3>Монтаж в короткие <br>сроки</h3>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-6 text-center wow fadeInUp" data-wow-delay="0.3s">
             <div class="guarantees_block">
-              <img src="img/guarantees/4.png" alt="">
+              <img src="img/guarantees/4.png" alt="Цена">
               <h3>Цены <br>от производителя</h3>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-6 text-center wow fadeInUp" data-wow-delay="0.4s">
             <div class="guarantees_block">
-              <img src="img/guarantees/5.png" alt="">
+              <img src="img/guarantees/5.png" alt="Замер и консультация">
               <h3>Бесплатный замер <br>и консультацию</h3>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-6 text-center wow fadeInUp" data-wow-delay="0.5s">
             <div class="guarantees_block">
-              <img src="img/guarantees/6.png" alt="">
+              <img src="img/guarantees/6.png" alt="Гарантия">
               <h3>Тепло и уют <br>на балконе</h3>
             </div>
           </div>
@@ -656,7 +698,7 @@
           <div class="col-md-4 col-sm-4 wow bounceIn">
             <div class="payment_item">
               <div class="payment_img">
-                <img src="img/payment/wallet.png" alt="">
+                <img src="img/payment/wallet.png" alt="Наличка">
               </div>
               <h3>Наличными</h3>
             </div>
@@ -664,7 +706,7 @@
           <div class="col-md-4 col-sm-4 wow bounceIn" data-wow-delay="0.3s">
             <div class="payment_item">
               <div class="payment_img">
-                <img src="img/payment/credit-card.png" alt="">
+                <img src="img/payment/credit-card.png" alt="Карта">
               </div>
               <h3>Банковской картой</h3>
             </div>
@@ -672,7 +714,7 @@
           <div class="col-md-4 col-sm-4 wow bounceIn" data-wow-delay="0.6s">
            <div class="payment_item">
              <div class="payment_img">
-               <img src="img/payment/museum.png" alt="">
+               <img src="img/payment/museum.png" alt="Безнал">
              </div>
              <h3>Безналичный расчет</h3>
            </div>
@@ -688,6 +730,7 @@
           <div class="col-lg-5 col-md-6 wow fadeInLeft">
             <h2 class="sale_title">Акция - 60%</h2>
             <p class="sale_subtitle">Успей сэкономить на остеклении! Только до 29 декабря!</p>
+            <!-- Timer -->
             <div class="timer">
               <div class="eTimer">
                 <div class="timer-header">до завершения акции:</div>
@@ -829,7 +872,7 @@
                 <div class="popup_form">
                     <form class="form" action="#">
                       <h2>Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
-                      <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
+                      <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя" autofocus>
                       <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
                       <button class="text-uppercase btn-block button" name="submit" type="submit">Вызвать замерщика!</button>
                       <p class="form_notice">Ваши данные конфиденциальны</p>
@@ -839,7 +882,7 @@
         </div>
     </div>
 
-    <!-- Calculator -->
+    <!-- Calculators -->
    <div class="popup_calc">
         <div class="popup_dialog">
             <div class="popup_calc_content text-center">
@@ -857,10 +900,10 @@
                    <img src="img/modal_calc/balkon/ba_04.png" alt="Тип4" class="type4_img"></a>
                </div>
                 <div class="big_img text-center">
-                  <img src="img/modal_calc/balkon/type1.png" alt="" id="type1">
-                  <img src="img/modal_calc/balkon/type2.png" alt="" id="type2">
-                  <img src="img/modal_calc/balkon/type3.png" alt="" id="type3">
-                  <img src="img/modal_calc/balkon/type4.png" alt="" id="type4">
+                  <img src="img/modal_calc/balkon/type1.png" alt="тип1" id="type1">
+                  <img src="img/modal_calc/balkon/type2.png" alt="тип2" id="type2">
+                  <img src="img/modal_calc/balkon/type3.png" alt="тип3" id="type3">
+                  <img src="img/modal_calc/balkon/type4.png" alt="тип4" id="type4">
                 </div>
                 <input class="form-control" id="width" type="text" placeholder="Ширина" required>
                 <label for="width">мм</label>
@@ -885,13 +928,13 @@
                    <option value="french">Панорамное остекление</option>
                    <option value="overhang">Остекление с выносом</option>
                  </select>
-                 <img src="img/modal_calc/icon_cold.png" alt="">
+                 <img src="img/modal_calc/icon_cold.png" alt="холодное">
                  <label>
                      <input class="checkbox" type="checkbox" name="checkbox-test">
                      <span class="checkbox-custom" id="cold"></span>
                      <span class="label">Холодное</span>
                  </label>
-                 <img src="img/modal_calc/icon_warm.png" alt="">
+                 <img src="img/modal_calc/icon_warm.png" alt="теплое">
                  <label>
                      <input class="checkbox" type="checkbox" name="checkbox-test">
                      <span class="checkbox-custom" id="warm"></span>
@@ -920,10 +963,10 @@
         </div>
     </div>
 
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/sliders.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/script.js"></script>
   </body>
 </html>

@@ -118,32 +118,38 @@ let imgs = document.querySelector("#our_works"),
 imgs.addEventListener('click', function (event) {
     event.preventDefault();
     let target = event.target;
+    const transition = 0.5
 
     while (target != this) {
-        if (target && target.tagName == 'A') {
-            let imgBig = document.createElement('img'),
-                imgDiv = document.createElement('div');
-            imgBigPath = target.href;
-            imgBig.src = imgBigPath;
-            imgBig.style.cssText = "display: block; margin: auto; height: 70vh; box-sizing: content-box;";
-            imgDiv.style.cssText = "position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99; background-color: rgba(0, 0, 0, 0.5);padding-top: 50px;";
-            imgDiv.id = 'newDiv';
-            body.appendChild(imgDiv);
-            imgDiv.appendChild(imgBig);
+        if (target && target.className === 'a') {
+            let bigImg = document.createElement('img'),
+                modalOverlay = document.createElement('div');
+            bigImgPath = target.dataset.img;
+            bigImg.src = bigImgPath;
+            bigImg.style.cssText = `display: inline-block; margin: auto; height: 0; box-sizing: content-box; transition: ease ${transition}s; `;
+            modalOverlay.style.cssText = `position: fixed; display: flex; align-items: center; top: 0; left: 0; width: 100%; height: 100%; z-index: 99; background: rgba(0, 0, 0, 0); transition: ease ${transition}s`;
+            modalOverlay.id = 'modal-overlay';
+            body.appendChild(modalOverlay);
+            modalOverlay.appendChild(bigImg);
+            setTimeout(() => {
+                bigImg.style.height = "80vh";
+                modalOverlay.style.background = "rgba(0, 0, 0, 0.5)"
+            }, 0)
+            modalOverlay.addEventListener('click', modalImgClose)
             break;
         } else {
             target = target.parentNode;
         }
     }
-
-    let newDiv = document.querySelector('#newDiv');
-    newDiv.addEventListener('click', function (event) {
-        let target = event.target;
+    function modalImgClose({target}) {
         if (target.tagName != 'IMG') {
-            this.remove();
-        }
-    });
+            target.childNodes[0].style.height = "0"
+            target.style.background = "rgba(0, 0, 0, 0)"
+            setTimeout(() => {this.remove();}, transition*1000)
+            }
+        };
 });
+
 
 // CALCULATOR
 // 1-е ОКНО (popup_calc)

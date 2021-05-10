@@ -498,18 +498,18 @@ textarea:focus {
 .works img {
   margin-bottom: 3rem;
 }
-.works a[data-fancybox="gallery"] .lupa {
+.works .a[data-fancybox="gallery"] .lupa {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
+  transition: ease 0.2s;
+}
+.works .a[data-fancybox="gallery"]:hover .lupa {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 40%;
-  opacity: 0;
-  transition: ease 0.2s;
-}
-.works a[data-fancybox="gallery"]:hover .lupa {
   opacity: 1;
 }
 /*Guarantees*/
